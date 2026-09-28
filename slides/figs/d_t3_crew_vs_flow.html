@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Crew und Flow zusammen</title>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  html, body { margin: 0; padding: 0; background: #f4f7fb; }
+  svg { display: block; width: 1360px; height: 448px; }
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1360 448" role="img" aria-labelledby="d_t3_crew_vs_flow-title d_t3_crew_vs_flow-desc">
+  <title id="d_t3_crew_vs_flow-title">Crew und Flow zusammen</title>
+  <desc id="d_t3_crew_vs_flow-desc">Ein Flow legt in Code fest, welcher Schritt wann läuft und was im State liegt; innerhalb eines Flow-Schritts arbeitet eine Crew aus Agenten autonom, gefolgt von einer menschlichen Prüfung.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#5a6b82"/></marker>
+    <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#2459a6"/></marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#f4f7fb"/>
+  <rect x="28" y="24" width="1304" height="336" rx="8" fill="rgba(24,59,102,0.02)" stroke="rgba(24,59,102,0.10)" stroke-width="0.8"/>
+  <rect x="44" y="28" width="504" height="16" rx="2" fill="#f4f7fb"/>
+  <text x="52" y="40" font-family="'Geist Mono', monospace" font-size="12" letter-spacing="0.14em" fill="rgba(24,59,102,0.55)">FLOW: CODE LEGT REIHENFOLGE, VERZWEIGUNG UND STATE FEST</text>
+  <line x1="244" y1="124" x2="292" y2="124" stroke="#5a6b82" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="572" y1="124" x2="620" y2="124" stroke="#5a6b82" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <path d="M432,160 V280" fill="none" stroke="#5a6b82" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <rect x="440" y="212" width="48" height="16" rx="2" fill="#f4f7fb"/>
+  <text x="464" y="224" font-family="'Geist Mono', monospace" font-size="12" letter-spacing="0.06em" fill="#5a6b82" text-anchor="middle">LEER</text>
+  <line x1="1068" y1="124" x2="1116" y2="124" stroke="#5a6b82" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="828" y1="156" x2="860" y2="156" stroke="#5a6b82" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <line x1="844" y1="248" x2="844" y2="280" stroke="#5a6b82" stroke-dasharray="5,4" stroke-width="1" marker-end="url(#arrow)"/>
+  <rect x="852" y="256" width="80" height="16" rx="2" fill="#f4f7fb"/>
+  <text x="892" y="268" font-family="'Geist Mono', monospace" font-size="12" letter-spacing="0.06em" fill="#5a6b82" text-anchor="middle">SCHREIBT</text>
+  <rect x="60" y="88" width="184" height="72" rx="6" fill="#f4f7fb"/>
+  <rect x="60" y="88" width="184" height="72" rx="6" fill="#ffffff" stroke="#183b66" stroke-width="1"/>
+  <text x="152" y="120" font-family="'Geist', sans-serif" font-size="20" font-weight="600" fill="#183b66" text-anchor="middle">Diff laden</text>
+  <text x="152" y="144" font-family="'Geist Mono', monospace" font-size="14" fill="#5a6b82" text-anchor="middle">@start</text>
+  <rect x="292" y="88" width="280" height="72" rx="6" fill="#f4f7fb"/>
+  <rect x="292" y="88" width="280" height="72" rx="6" fill="#ffffff" stroke="#183b66" stroke-width="1"/>
+  <text x="432" y="120" font-family="'Geist', sans-serif" font-size="20" font-weight="600" fill="#183b66" text-anchor="middle">Leer oder Änderungen?</text>
+  <text x="432" y="144" font-family="'Geist Mono', monospace" font-size="14" fill="#5a6b82" text-anchor="middle">@router</text>
+  <rect x="304" y="280" width="256" height="48" rx="6" fill="#f4f7fb"/>
+  <rect x="304" y="280" width="256" height="48" rx="6" fill="rgba(24,59,102,0.02)" stroke="rgba(24,59,102,0.20)" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="432" y="312" font-family="'Geist', sans-serif" font-size="20" font-weight="600" fill="#183b66" text-anchor="middle">Ende: nichts zu tun</text>
+  <rect x="620" y="72" width="448" height="176" rx="6" fill="#f4f7fb"/>
+  <rect x="620" y="72" width="448" height="176" rx="6" fill="rgba(36,89,166,0.08)" stroke="#2459a6" stroke-width="1"/>
+  <text x="844" y="104" font-family="'Geist', sans-serif" font-size="20" font-weight="600" fill="#183b66" text-anchor="middle">Crew-Schritt</text>
+  <text x="844" y="224" font-family="'Geist Mono', monospace" font-size="14" fill="#5a6b82" text-anchor="middle">Agenten wählen Werkzeuge und Reihenfolge selbst</text>
+  <rect x="644" y="124" width="184" height="64" rx="6" fill="#f4f7fb"/>
+  <rect x="644" y="124" width="184" height="64" rx="6" fill="#ffffff" stroke="#183b66" stroke-width="1"/>
+  <text x="736" y="164" font-family="'Geist', sans-serif" font-size="20" font-weight="600" fill="#183b66" text-anchor="middle">Analyst</text>
+  <rect x="860" y="124" width="184" height="64" rx="6" fill="#f4f7fb"/>
+  <rect x="860" y="124" width="184" height="64" rx="6" fill="#ffffff" stroke="#183b66" stroke-width="1"/>
+  <text x="952" y="164" font-family="'Geist', sans-serif" font-size="20" font-weight="600" fill="#183b66" text-anchor="middle">Redakteur</text>
+  <rect x="1116" y="88" width="184" height="72" rx="6" fill="#f4f7fb"/>
+  <rect x="1116" y="88" width="184" height="72" rx="6" fill="#ffffff" stroke="#183b66" stroke-width="1"/>
+  <text x="1208" y="120" font-family="'Geist', sans-serif" font-size="20" font-weight="600" fill="#183b66" text-anchor="middle">Mensch prüft</text>
+  <text x="1208" y="144" font-family="'Geist Mono', monospace" font-size="14" fill="#5a6b82" text-anchor="middle">@human_feedback</text>
+  <rect x="620" y="280" width="680" height="48" rx="6" fill="#f4f7fb"/>
+  <rect x="620" y="280" width="680" height="48" rx="6" fill="rgba(24,59,102,0.05)" stroke="#5a6b82" stroke-width="1"/>
+  <text x="960" y="312" font-family="'Geist', sans-serif" font-size="20" font-weight="600" fill="#183b66" text-anchor="middle">State (Pydantic): diff, summary, verdict</text>
+  <text x="680" y="396" font-family="'Geist Mono', monospace" font-size="14" fill="#5a6b82" text-anchor="middle">Flow: vorhersagbar, testbar, jeder Schritt sichtbar im State</text>
+  <text x="680" y="424" font-family="'Geist Mono', monospace" font-size="14" fill="#5a6b82" text-anchor="middle">Crew: autonom, aber eingezäunt auf einen Schritt mit klarer Ein- und Ausgabe</text>
+</svg>
+</body>
+</html>

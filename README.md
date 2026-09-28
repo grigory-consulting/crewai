@@ -1,3 +1,4 @@
+Folien: https://grigory-consulting.github.io/crewai/slides/ki-agenten_html/
 
 pip install -r requirements.txt
 
